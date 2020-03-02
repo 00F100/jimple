@@ -62,7 +62,7 @@ class Jimple {
      * @return {*} The object related to the service or the value of the parameter associated with the key informed
      * @throws If the key does not exist
      */
-    get(key) {
+    get(key, params) {
         checkDefined(this, key);
         let item = this._items[key];
         let obj;
@@ -72,7 +72,7 @@ class Jimple {
             } else if (this._instances.has(item)) {
                 obj = this._instances.get(item);
             } else {
-                obj = item(this);
+                obj = item(this, params);
                 if (!this._factories.has(item)) {
                     this._instances.set(item, obj);
                 }

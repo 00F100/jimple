@@ -47,14 +47,10 @@ If you liked that features, feel free to test Jimple **free** on a NodeJS enviro
 The installation of this package is very simple: In fact, it can be installed by just running:
 
 ```
-    npm install --save jimple
+    npm install --save @00f100/jimple
 ```
 
-If using NodeJS (this installs the package based purely on ES 6), or:
-
-```
-    bower install --save jimple
-```
+If using NodeJS (this installs the package based purely on ES 6)
 
 If you want to use this package in the browser. You can also use the version provided by a CDN, like [JSDelivr](https://www.jsdelivr.com/package/npm/jimple). So you can paste the code below on a page and start using Jimple really fast:
 
